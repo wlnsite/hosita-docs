@@ -3,6 +3,7 @@
 	* [状态码定义](?id=status_code)
 	* [枚举字段定义](enums.md)
 	* [实体对象定义](object/README.md)
+		* [就诊人（卡）](object/patient.md)
 * [统一支付平台](hospay/README.md)
 	* [支付下单](hospay/pay/README.md)
 	* [平台对账](hospay/reconciliation/README.md)
