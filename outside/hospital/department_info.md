@@ -18,6 +18,7 @@
     | - state | int | Y | [记录状态](enums?id=state) |
     | - dept_id | string | R | 科室编号（唯一标识） |
     | - dept_name | string | R | 科室名称 |
+    | - dept_type | string | R | 科室类型 |
     | - department_code | string | N | 科室注册编码 |
     | - department_name | string | N | 科室注册名称 |
     | - branch_id | string | O | 所属院区编号 |

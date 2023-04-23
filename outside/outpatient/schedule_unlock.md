@@ -1,21 +1,19 @@
-# 就诊信息查询
+# 释放已锁定号源
 
 
-- **接口说明：** 查询用户就诊信息
-- **接口地址：** /api/patient/query
+- **接口说明：** 未缴费，释放已锁定号源
+- **接口地址：** /api/outpatient/schedule_lock
 - **请求方式：** GET/POST
 - **请求参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
     | -------- | -------- | -------- | ---- |
-    | id | string | C | 就诊人（卡）ID |
-    | mzh | string | C | 门诊号 |
-    | zyh | string | C | 住院号 |
-    | idcard | string | C | 证件号码 |
-    `说明：以上参数至少要有一个，id不为空时优先使用此条件`
+    | pre_id | string | R | 锁号时的预约单号 |
+    | see_no | string | O | 锁号时的就诊序号 |
 
 - **输出参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
     | -------- | -------- | -------- | ---- |
     | code | string | R | 执行状态：1-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
-    | data | object | R | 就诊人信息[[对象实体]](entity/patient.md) |
+    | data | object | R | 输出数据：释放号源结果 |
+    | - result | bool | R | 是否成功，true或false |
