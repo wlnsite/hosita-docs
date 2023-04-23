@@ -12,11 +12,11 @@
     | zyh | string | C | 住院号 |
     | idcard | string | C | 证件号码 |
 
-    `说明：以上参数四选一至少要有一个，id不为空时优先使用此条件`
+    `说明：以上参数至少要有一个，id不为空时优先使用此条件`
 
 - **输出参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
     | -------- | -------- | -------- | ---- |
     | code | string | R | 执行状态：1-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
-    | data | object | R | 就诊人信息[[对象实体]](object/patient.md) |
+    | data | object | R | 就诊人信息[[对象实体]](entity/patient.md) |
