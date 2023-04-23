@@ -23,7 +23,6 @@
 		* [查询挂号预约记录](outside/outpatient/register_pre.md)
 		* [查询就诊人（卡）挂号记录](outside/outpatient/register_list.md)
 		* [门诊签到](outside/outpatient/register_sign.md)
-		* [患者待缴费清单](outside/outpatient/unpaidfees)
 	* [住院服务接口](outside/inhospital/README.md)
 		* [住院患者预交金充值](outside/inhospital/prepay)
 		* [查询患者预缴费记录](outside/inhospital/prepay_list)
