@@ -18,7 +18,8 @@
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：排班计划列表 |
     | - schedule_id | string | R | 计划编号 |
-    | - reg_level | string | O | [挂号级别](enums?id=reg_level)（可选参数） |
+    | - reg_level_id | string | R | [挂号级别](enums?id=reg_level)（可选参数） |
+    | - reg_level_name | string | O | 挂号级别名称 |
     | - schedule_date | string | R | 出诊日期（格式：`yyyy-MM-dd`） |
     | - schedule_time | string | R | 出诊时间（格式：`HH:mm:ss`） |
     | - dept_id | string | R | 科室编号（唯一标识） |

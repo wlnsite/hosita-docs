@@ -25,8 +25,9 @@
     | message | string | R | 消息：错误消息或成功提示 |
     | data | object | R | 输出数据：锁号结果 |
     | - result | bool | R | 是否成功，true或false |
-    | - reg_fee | decimal | C | 挂号费用 |
-    | - reg_level | string | C | [挂号级别](enums?id=reg_level)（可选参数） |
+    | - reg_fee | decimal | R | 挂号费用 |
+    | - reg_level_id | string | R | [挂号级别](enums?id=reg_level)（可选参数） |
+    | - reg_level_name | string | O | 挂号级别名称 |
     | - schedule_date | string | C | 出诊日期（格式：`yyyy-MM-dd`） |
     | - schedule_time | string | C | 出诊时间（格式：`HH:mm:ss`） |
     | - pre_id | string | C | 预约单号（取消锁号时用） |

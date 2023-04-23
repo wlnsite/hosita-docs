@@ -7,6 +7,7 @@
 	* [实体对象定义](entity/README.md)
 		* [医生信息](entity/doctor.md)
 		* [就诊档案（卡）](entity/patient.md)
+		* [处方明细](entity/recipe.md)
 * [统一支付平台](hospay/README.md)
 	* [支付下单](hospay/pay/README.md)
 	* [平台对账](hospay/reconciliation/README.md)
