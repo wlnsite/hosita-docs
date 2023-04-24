@@ -16,7 +16,7 @@
     | code | string | R | 执行状态：1-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：挂号记录列表 |
-    | - state | int | R | /状态：0-新增 1- 已使用 9-删除注销 |
+    | - state | int | R | 状态：0-新增 1- 已使用 9-删除注销 |
     | - operator_time | string | R | 操作挂号时间（格式：`HH:mm:ss`） |
     | - register_date | string | R | 挂号就诊日期（格式：`yyyy-MM-dd`） |
     | - register_time | string | R | 挂号就诊时间（格式：`HH:mm:ss`） |

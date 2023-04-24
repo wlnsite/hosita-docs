@@ -43,28 +43,41 @@ HTTP通讯及报文`HEX`、`BASE64`编码均采用`UTF-8`字符集编码格式�
 - #### 4.1 统一规范
     | 状态码 | 状态 | 说明 |
     | ---- | ---- | ---- |
-    | -1  | 未知异常 unkown error | 未确认具体的错误内容 |
-    |  0  | 调用成功 result success | 代表调用成功，流程正常 |
-    |  1  | 调用成功 result success | 代表调用成功，但流程可能不正常 |
-    | 1xx | 参数错误 parameter error | 检查接口调用参数是否正确 |
-    | 2xx | 部分完成 partially completed | 进行了部分处理并保存，但未获取到最终输出 |
-    | 3xx | 服务状态 service state | 下线、停机维护等 |
-    | 4xx | 内部错误 internal error | 网络错误，返序列化失败等 |
-    | 5xx | 业务错误 business error | 业务错误，无权限、数据不存在等 |
+    |  -1  | 未知异常 unkown error | 未确认具体的错误内容 |
+    |  0   | 调用成功 result success | 代表调用成功，流程正常 |
+    |  1   | 调用成功 result error | 进行了部分处理并保存，但未获取到全部预期输出 |
+    | 1xx  | 本地错误 local error | 网络错误，返序列化失败等，由本地SDK识别返回 |
+    | 2xx  | 远端错误 remote error | 公共参数，验签解密错误等，由网关判定输出 |
+    | 3xx  | 服务状态 service state | 下线、停机维护等 |
+    | 4xx  | 身份认证 internal error | 需要认证、用户身份无权限等 |
+    | 5xx  | 业务异常 business error | 业务异常，流程错误，数据不存在等 |
+    | xxxx | 其它输出 custom output | 自定义输出，推荐使用4位及以上的状态码 |
 
 - #### 4.2 常见错误码
     | 态码 | 状态 | 说明 |
     | ---- | ---- | ---- |
-    | 100 | 参数错误 parameter error | 参数丢失、格式错误、不符合传参要求等 |
-    | 101 | 参数错误 parameter error | 参数丢失、格式错误、不符合传参要求等 |
-    | 102 | 解密失败 decryption failed | 确认token通讯密钥是否正确 |
-    | 103 | 签名错误 signature failed | 确认签名算法及密钥是否正确 |
-    | 104 | 请求超时 request timeout | 确认timestamp参数是否在有效期内 |
-    | 301 | 服务停用 service transfer | 系统部署地址已转移 |
-    | 302 | 服务停用 service maintain | 系统正在维护中 |
-    | 304 | 服务停用 service stop | 不再提供响应服务 |
-    | 400 | 通讯异常 internal error | 本地参数缺少或配置有误 |
-    | 401 | 通讯异常 internal error | 服务器无返回或状态异常 |
-    | 402 | 通讯异常 internal error | 已获取到输出，但反序列化失败 |
-    | 403 | 通讯异常 internal error | 禁止访问，如无权限等 |
-    | 500 | 业务错误 business error | 业务错误，无具体原因内部异常 |
+    | 100  | 配置错误 client config error | 本地参数缺少或配置有误 |
+    | 101  | 通讯异常 client network error | 通讯异常，网络异常或请求错误 |
+    | 102  | 参数错误 response parameter error | 通讯参数丢失、格式错误、不符合输出标准等 |
+    | 103  | 时间错位 response time warp | 远端输出时间有错位 |
+    | 104  | 输出错误 response format error | 远端输出格式不满足本地要求 |
+    | 105  | 密钥错误 response verify sign failed | 远端返回内容验签失败 |
+    | 106  | 密钥错误 response content decrypt failed | 远端返回内容无法解密 |
+    | 107  | 解析错误 response content deserialize failed | 收到远端输出，但反序列化失败 |    
+    | 200  | 配置错误 server config error | 远端参数缺少或配置有误 |
+    | 201  | 通讯异常 server gateway error | 远端服务器网关异常，后端节点错误 |
+    | 202  | 参数错误 request parameter error | 通讯参数丢失、格式错误、不符合请求标准等 |
+    | 203  | 时间错位 request time warp | 本地请求时间有错位 |
+    | 204  | 请求错误 request format error | 本地请求容格式不满足远端要求 |
+    | 205  | 密钥错误 request verify sign failed | 本地请求内容验签失败 |
+    | 206  | 密钥错误 request content decrypt failed | 远端接收内容无法解密 |
+    | 207  | 解析错误 request content deserialize failed | 远端收到请求，但反序列化失败 |
+    | 301  | 服务停用 service transfer | 系统部署地址已转移 |
+    | 302  | 服务停用 service maintain | 系统正在维护中 |
+    | 304  | 服务停用 service stop | 不再提供响应服务 |
+    | 401  | 需要认证 unauthorized | 请求要求用户先进行身份认证 |
+    | 403  | 停止访问 unit forbidden | 禁止访问，如业务单元已停用等 |
+    | 404  | 未知业务 not found | 无此业务，未知的请求内容 |
+    | 405  | 无权访问 not allowed | 禁止访问，如无权访问此业务等 |
+    | 500  | 业务错误 business error | 业务错误，无具体原因内部异常 |
+    | 501  | 参数错误 parameter error | 业务数据的参数丢失、格式错误、不符合数据要求等 |
