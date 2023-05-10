@@ -1,7 +1,9 @@
 # 门诊服务相关接口
 
 ### 接口列表
-* [门诊排班计划](outside/outpatient/schedule.md)
+* [查询挂号科室](outside/outpatient/register_department_list.md)
+* [门诊排班计划 - 分组](outside/outpatient/schedule_group.md)
+* [门诊排班计划 - 明细](outside/outpatient/schedule_details.md)
 * [按计划锁号](outside/outpatient/schedule_lock.md)
 * [释放已锁定号源](outside/outpatient/schedule_unlock.md)
 * [查询挂号预约记录](outside/outpatient/register_pre.md)

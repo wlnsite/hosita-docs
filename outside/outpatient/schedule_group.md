@@ -1,7 +1,7 @@
-# 查询排班计划列表
+# 查询排班计划分组
 
-- **接口说明：** 查询排班计划列表
-- **接口地址：** /api/outpatient/schedule
+- **接口说明：** 查询排班计划分组
+- **接口地址：** /api/outpatient/schedule_group
 - **请求方式：** GET/POST
 - **请求参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
@@ -17,12 +17,15 @@
     | code | string | R | 执行状态：1-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：排班计划列表 |
-    | - schedule_id | string | R | 计划编号 |
-    | - reg_fee | decimal | R | 挂号费用 |
+    | - schedule_no | string | R | 计划编号 |
+    | - schedule_type | string | R | 计划分类 |
+    | - reg_fee | int | R | 挂号费用（单位：分） |
+    | - reg_count | int | R | 可用余号 |
     | - reg_level_id | string | R | [挂号级别](enums?id=reg_level)（可选参数） |
     | - reg_level_name | string | O | 挂号级别名称 |
+    | - partime | bool | R | 是否分时段，true或false |
     | - schedule_date | string | R | 出诊日期（格式：`yyyy-MM-dd`） |
-    | - schedule_time | string | R | 出诊时间（格式：`HH:mm:ss`） |
+    | - schedule_time_zones | string | R | 出诊时间区间（如：`08:30-12:30`） |
     | - dept_id | string | R | 科室编号（唯一标识） |
     | - dept_name | string | R | 科室名称（院内简称） |
     | - department_code | string | O | 科室注册编码 |
