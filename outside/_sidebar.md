@@ -20,6 +20,7 @@
 		* [查询就诊人有效的住院信息](outside/patient/inhospital.md)
 		* [通过姓名和生日查找就诊档案](outside/patient/find.md)
 	* [门诊服务接口](outside/outpatient/README.md)
+		* [查询挂号科室](outside/outpatient/register_department_list.md)
 		* [门诊排班计划](outside/outpatient/schedule.md)
 		* [按计划锁号](outside/outpatient/schedule_lock.md)
 		* [释放已锁定号源](outside/outpatient/schedule_unlock.md)
