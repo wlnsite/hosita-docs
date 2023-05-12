@@ -22,14 +22,14 @@
 | fee_category_code | string | N | [费用类别](enums?id=fee_category) |
 | fee_category_name | string | N | 费用类别名称 |
 | trade_no | string | N | 交易流水号，已缴费时有输出 |
-| total_unit | string | Y | 计量单位，如：g |
-| total_cost | decimal | Y | 小计金额 |
+| total_unit | string | Y | 整单计量单位，如：g |
+| total_amount | decimal | Y | 小计金额 |
 | detail_sequence | int | Y | 明细在处方内序号 |
 | detail_group | int | Y | 明细组合序号 |
 | detail_count | decimal | Y | 明细数量 |
 | detail_price | decimal | Y | 单价 |
 | detail_specs | string | Y | 规格，如：1 g×1000 g/kg |
-| detail_unit | string | Y | 计量单位，如：g |
+| detail_unit | string | Y | 明细计量单位，如：g |
 | frequency_code | string | N | [处方频次](enums?id=recipe_frequency) |
 | frequency_name | string | N | 处方频次名称 |
 | dosage_once_num | decimal | N | 每次用量 |

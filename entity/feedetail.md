@@ -20,6 +20,7 @@
 | count | decimal | Y | 无 | 数量 |
 | price | decimal | Y| 无 | 单价 |
 | specs | string | Y | 无 | 规格 |
+| unit | decimal | Y | 无 | 计量单位 |
 | single_dosage_dscr | string | N | 无 | 单次剂量描述 |
 | used_frequency_dscr | string | N | 无 | 使用频次描述 |
 | period_days | decimal | N | 无 | 周期天数 |
@@ -30,8 +31,8 @@
 | billing_doctor_name | string | Y | 无 | 开单医生姓名 |
 | acrod_dept_codg | string | N | 无 | 受单科室编码 |
 | acrod_dept_name | string | N | 无 | 受单科室名称 |
-| orders_doctor_codg | string | N | 无 | 受单医生编码 |
-| orders_doctor_name | string | N | 无 | 受单医生姓名 |
+| acrod_doctor_codg | string | N | 无 | 受单医生编码 |
+| acrod_doctor_name | string | N | 无 | 受单医生姓名 |
 | hosp_appr_flag | int | N | 无 | 医院审批标志，1：已审批，2：转自费 |
 | tcmdrug_used_way | string | N | 无 | 中药使用方式 |
 | etip_flag | string | N | 无 | 外检标志，[0：否，1：是](enums?id=yesno) |

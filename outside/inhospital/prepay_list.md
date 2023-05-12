@@ -20,6 +20,7 @@
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：预缴记录列表（按时间排序） |
     | - zyh | string | R | 住院档案号 |
+    | - inhosp_no | string | R | 住院流水号（第几次住院） |
     | - dept_id | string | R | 所属科室Id |
     | - dept_name | string | R | 所属科室名称 |
     | - patient_id | string | R | 所属就诊档案（卡）Id |
@@ -27,6 +28,6 @@
     | - amount | decimal | R | 预缴金额 |
     | - trade_no | string | O | 交易流水号 |
     | - trade_time | unix | R | 预缴费时间，Unix时间戳（精确到秒） |
-    | - channel_id | string | O | 缴费渠道ID |
-    | - channel_name | string | O | 缴费渠道名称 |
+    | - trade_channel_code | string | O | 缴费渠道编码 |
+    | - trade_channel_name | string | O | 缴费渠道名称 |
     | - reconciliation_no | string | C | HIS单据号 |
