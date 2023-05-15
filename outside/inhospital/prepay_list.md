@@ -8,7 +8,7 @@
     | -------- | -------- | -------- | ---- |
     | id | string | C | 就诊档案（卡）ID |
     | zyh | string | C | 住院档案号 |
-    | idcard | string | C | 证件号码 |
+    | inhops_no | string | C | 住院流水号 |
     `说明：以上参数至少要有一个，zyh不为空时优先使用此条件`
     | mintime | unix | O | 查询起始时间，Unix时间戳（精确到秒），为空不限制  |
     | maxtime | unix | O | 查询截止时间，Unix时间戳（精确到秒），为空不限制  |

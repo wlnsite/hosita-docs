@@ -36,6 +36,7 @@
 		* [住院患者预交金充值](outside/inhospital/prepay)
 		* [查询患者预缴费记录](outside/inhospital/prepay_list)
 		* [查询住院患者日清单](outside/inhospital/daily_list)
+		* [查询住院患者费用明细](outside/inhospital/feedetail_list)
 	* [报告查询接口](outside/report/README.md)
 		* [查询检查报告单列表](outside/report/report_list.md)
 		* [查询检查文字报告单](outside/report/report_text.md)

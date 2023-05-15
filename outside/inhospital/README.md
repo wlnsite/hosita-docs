@@ -4,3 +4,4 @@
 * [住院患者预交金充值](outside/inhospital/prepay)
 * [查询患者预缴费记录](outside/inhospital/prepay_list)
 * [查询住院患者日清单](outside/inhospital/daily_list)
+* [查询住院患者费用明细](outside/inhospital/feedetail_list)
