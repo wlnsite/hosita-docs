@@ -1,6 +1,6 @@
-# 患者待缴费清单
+# 患者待缴费处方单
 
-- **接口说明：** 患者待缴费清单
+- **接口说明：** 患者待缴费处方单
 - **接口地址：** /api/outpatient/unpaidfees
 - **请求方式：** GET/POST
 - **请求参数：**
@@ -16,6 +16,7 @@
     | data | array | R | 输出数据：挂号记录列表 |
     | - recipe_id | string | R | 处方ID |
     | - recipe_fee | decimal | R | 处方费用金额 |
+    | - billing_time | string | R | 开单时间 |    
     | - dept_id | string | R | 挂号科室编号（唯一标识） |
     | - dept_name | string | R | 挂号科室名称 |
     | - register_no | string | C | 挂号单据号 |

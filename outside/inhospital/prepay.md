@@ -14,8 +14,8 @@
     | payment | string | O | [支付方式](enums?id=payment) |
     | patient_id | string | R | 所属就诊档案（卡）Id |
     | patient_name | string | O | 所属就诊档案（卡）姓名 |
-    | channel_id | string | C | 缴费渠道ID |
-    | channel_name | string | O | 缴费渠道名称（可选提供） |
+    | trade_channel_code| string | C | [缴费渠道](enums?id=platform) |
+    | trade_channel_name | string | O | 缴费渠道名称（可选提供） |
     | operator_id | string | C | 操作员ID |
     | operator_name | string | O | 操作员姓名（可选提供） |
     | operator_time | unix | O | 操作时间，Unix时间戳（精确到秒），默认为当前 |

@@ -26,6 +26,8 @@
     | - patient_name | string | R | 所属就诊档案（卡）姓名 |
     | - recipe_dept_id | string | R | 开单科室Id |
     | - recipe_dept_name | string | R | 开单科室名称 |
+    | - fee_id | string | R | 费用ID |
+    | - fee_no | string | R | 费用单号 |
     | - fee_date | unix | R | 费用时间，Unix时间戳（精确到秒） |
     | - fee_type | string | R | 费用类别，如：护理费、检查费等 |
     | - fee_name | string | R | 费用名称，如：Ⅰ级护理(优质护理) |

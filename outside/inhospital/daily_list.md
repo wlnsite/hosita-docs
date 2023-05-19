@@ -21,5 +21,5 @@
     | - dept_name | string | R | 住院科室名称 |
     | - patient_id | string | R | 所属就诊档案（卡）Id |
     | - patient_name | string | R | 所属就诊档案（卡）姓名 |
-    | - fee_date | unix | R | 费用时间，Unix时间戳（精确到秒） |
+    | - fee_date | string | R | 费用日期 |
     | - sum_amount | decimal | R | 合计金额 |
