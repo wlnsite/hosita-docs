@@ -15,7 +15,8 @@
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：挂号记录列表 |
     | - recipe_id | string | R | 处方ID |
-    | - recipe_fee | decimal | R | 处方费用金额 |
+    | - should_money | decimal | R | 应付金额 |
+    | - actual_money | decimal | R | 实付金额 |
     | - billing_time | string | R | 开单时间 |    
     | - project_code | string | R | 所属项目编码（item_code） |
     | - project_name | string | R | 所属项目名称（item_name） |

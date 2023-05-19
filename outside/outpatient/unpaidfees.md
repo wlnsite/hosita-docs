@@ -15,7 +15,8 @@
     | message | string | R | 消息：错误消息或成功提示 |
     | data | array | R | 输出数据：挂号记录列表 |
     | - recipe_id | string | R | 处方ID |
-    | - recipe_fee | decimal | R | 处方费用金额 |
+    | - should_money | decimal | R | 应付金额 |
+    | - actual_money | decimal | R | 实付金额 |
     | - billing_time | string | R | 开单时间 |    
     | - dept_id | string | R | 挂号科室编号（唯一标识） |
     | - dept_name | string | R | 挂号科室名称 |
