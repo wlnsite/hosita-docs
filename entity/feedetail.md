@@ -16,7 +16,8 @@
 | med_list_name | string | Y | 无 | 医疗目录名称 |
 | med_list_specs | string | Y | 无 | 医疗目录规格 |
 | medins_list_codg | string | Y | 无 | 医药机构目录编码 |
-| detail_fee_sumamt | decimal | Y | 无 | 明细项目费用总额 |
+| detail_fee_should | decimal | Y | 无 | 明细项目费用总额(should_money应付金额) |
+| detail_fee_sumamt | decimal | Y | 无 | 明细项目费用总额(actual_money实付金额) |
 | count | decimal | Y | 无 | 数量 |
 | price | decimal | Y| 无 | 单价 |
 | specs | string | Y | 无 | 规格 |

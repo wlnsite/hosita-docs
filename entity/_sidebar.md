@@ -17,3 +17,4 @@
 	* [门诊服务接口](outside/outpatient/README.md)
 	* [住院服务接口](outside/inhospital/README.md)
 	* [报告查询接口](outside/report/README.md)
+	* [其它接口](outside/other/README.md)
