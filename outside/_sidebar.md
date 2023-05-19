@@ -44,3 +44,5 @@
 		* [查询检验报告单列表](outside/report/inspect_list.md)
 		* [查询检测样本列表](outside/report/sample_list.md)
 		* [根据样本查询检测报告内容](outside/report/sample_report.md)
+	* [其它接口](outside/other/README.md)
+		* [查询用户电子发票列表](outside/other/invono_list.md)
