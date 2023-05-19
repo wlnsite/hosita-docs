@@ -6,6 +6,8 @@
 * [门诊排班计划 - 明细](outside/outpatient/schedule_details.md)
 * [按计划锁号](outside/outpatient/schedule_lock.md)
 * [释放已锁定号源](outside/outpatient/schedule_unlock.md)
+* [挂号缴费提交](outside/outpatient/register_commit.md)
+* [挂号已缴费退号](outside/outpatient/register_refund.md)
 * [查询挂号预约记录](outside/outpatient/register_pre.md)
 * [查询就诊人（卡）挂号记录](outside/outpatient/register_list.md)
 * [不按计划直接挂号](outside/outpatient/register_direct.md)

@@ -24,5 +24,5 @@
 | doctor_name | string | N | 出诊医生姓名 |
 | trade_no | string | N | 交易单号，已缴费时有输出 |
 | trade_time | unix | N | 交易时间，Unix时间戳（精确到秒） |
-| trade_channel_code | string | N | 挂号渠道ID |
+| trade_channel_code | string | N | 挂号渠道编码 |
 | trade_channel_name | string | N | 挂号渠道名称 |
