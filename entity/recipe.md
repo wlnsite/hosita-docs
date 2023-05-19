@@ -38,6 +38,6 @@
 | dosage_unit_name | string | N | 每次用量单位名称 |
 | dosage_form_code | string | N | [剂型](enums?id=recipe_dosage_form) |
 | dosage_form_name | string | N | 剂型名称 |
-| term_type_id | string | N | 术语类别ID |
-| term_type_code | string | N | 术语类别名称 |
+| term_type_code | string | N | 术语类别（费目）编码 |
+| term_type_name | string | N | 术语类别（费目）名称 |
 | charge_flag | int | Y | 已缴费标志，0-未缴费，1已缴费 |

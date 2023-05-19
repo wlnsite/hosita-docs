@@ -33,4 +33,6 @@
     | - acrod_doctor_name | string | R | 受单医生名称 |
     | - fee_category_code | string | C | [费用类别](enums?id=fee_category) |
     | - fee_category_name | string | C | 费用类别名称 |
+    | - term_type_code | string | C | 术语类别（费目）编码 |
+    | - term_type_name | string | C | 术语类别（费目）名称 |
     | - med_type | string | C | 医疗类别 |

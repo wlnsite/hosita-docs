@@ -35,3 +35,10 @@
     | - doctor_name | string | R | 出诊医生名称，留空为轮值医生 |
     | - doctor_regcode | string | O | 医师注册编码 |
     | - doctor_regname | string | O | 医师注册姓名 |
+    | - med_list_codg | string | O | 医疗目录编码 |
+    | - med_list_name | string | O | 医疗目录名称 |
+    | - med_list_specs | string | O | 医疗目录规格 |
+    | - medins_list_codg | string | O | 医药机构目录编码 |
+    | - hosp_appr_flag | int | O | 医院审批标志，1：已审批，2：转自费 |
+
+
