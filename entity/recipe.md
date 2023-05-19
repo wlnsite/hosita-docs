@@ -23,7 +23,8 @@
 | fee_category_name | string | N | 费用类别名称 |
 | trade_no | string | N | 交易流水号，已缴费时有输出 |
 | total_unit | string | Y | 整单计量单位，如：g |
-| total_amount | decimal | Y | 小计金额 |
+| should_money | decimal | R | 小计应付金额 |
+| actual_money | decimal | R | 小计实付金额 |
 | detail_sequence | int | Y | 明细在处方内序号 |
 | detail_group | int | Y | 明细组合序号 |
 | detail_count | decimal | Y | 明细数量 |
