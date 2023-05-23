@@ -3,9 +3,12 @@
 | 字段名称 | 字段类型 | 不能为空 | 默认值 | 描述 |
 | -------- | -------- | -------- | ------ | ---- |
 | id | string | Y | 无 | 挂号单据号 |
+| mzh | string | Y | 门诊号 |
 | patient_id | string | Y | 所属就诊档案（卡）Id |
 | patient_name | string | N | 所属就诊档案（卡）姓名 |
 | patient_idcard | string | N | 所属就诊档案（卡）证件号 |
+| patient_sex | string | N | 看诊患者性别 |
+| patient_age | string | N | 看诊患者年龄 |
 | schedule_no | string | N | 号源编号 |
 | schedule_type | string | N | 号类编号 |
 | schedule_date | string | N | 挂号就诊日期（格式：yyyy-MM-dd） |
