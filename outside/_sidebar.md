@@ -47,7 +47,7 @@
 		* [查询检测样本列表](outside/report/sample_list.md)
 		* [根据样本查询检测报告内容](outside/report/sample_report.md)
 	* [其它接口](outside/other/README.md)
-		* [发起退费接口](outside/other/refund.md)
+		* [发起退费接口](outside/other/refund_apply.md)
 		* [统一退费查询接口](outside/other/refund_query.md)
 		* [HIS侧退费时的通知接口](outside/other/refund_sync.md)
 		* [查询用户电子发票列表](outside/other/invono_list.md)

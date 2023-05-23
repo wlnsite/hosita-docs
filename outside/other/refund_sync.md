@@ -18,7 +18,6 @@
     | med_trans_id | string | O | 支付平台医疗订单号 |
     | med_refund_id | string | O | 发起交易时的报文ID |
     | si_refund_id | string | R | 医保退款流水号 |
-    | si_refund_id | string | R | 医保退款流水号 |
     | si_refund_time | long | R | 医保退款完成时间（Unix时间戳） |
     | cash_refund_id | string | R | 现金退款流水号 |
     | cash_refund_time | long | R | 现金退款完成时间（Unix时间戳） |

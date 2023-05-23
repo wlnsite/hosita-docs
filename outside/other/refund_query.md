@@ -29,7 +29,7 @@
     | - si_refund_time | long | R | 医保退款完成时间（Unix时间戳） |
     | - cash_refund_id | string | R | 现金退款流水号 |
     | - cash_refund_time | long | R | 现金退款完成时间（Unix时间戳） |
-    | - amount_si | int | R | 医保统筹退费金额，未退时为零（单位：分） |
-    | - amount_acc | int | R | 医保个账退费金额，未退时为零（单位：分） |
-    | - amount_cash | int | R | 现金支付退费金额，未退时为零（单位：分） |
+    | - amount_si | int | R | 医保统筹退费金额，未退时为零，负数代表已退费金额（单位：分） |
+    | - amount_acc | int | R | 医保个账退费金额，未退时为零，负数代表已退费金额（单位：分） |
+    | - amount_cash | int | R | 现金支付退费金额，未退时为零，负数代表已退费金额（单位：分） |
 

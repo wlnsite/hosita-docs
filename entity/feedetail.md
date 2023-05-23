@@ -6,13 +6,14 @@
 | mdtrt_id | string | Y | 无 | 就诊ID |
 | psn_no | string | N | 无 | 人员编号 |
 | patient_id | string | Y | 无 | 所属就诊档案（卡）Id |
+| patient_no | string | Y | 无 | 所属档案医保系统人员编号 |
 | patient_name | string | Y | 无 | 所属就诊档案（卡）姓名 |
 | disease_code | string | N | 无 | 疾病诊断编码（非挂号时不能为空，按照标准编码填写：按病种结算病种目录代码(bydise_setl_list_code)、门诊慢特病病种目录代码(opsp_dise_cod)） |
 | charge_batch_no | string | Y | 无 | 平台交易流水号、收费批次号（同一收费批次号病种编号必须一致） |
 | recipe_id | string | Y | 无 | 处方号 |
 | recipe_cric_flag | string | Y | 无 | 外购处方标志，[0：否，1：是](enums?id=yesno) |
 | fee_ocur_time | string | Y | 无 | 费用发生时间，格式：`yyyy-MM-dd HH:mm:ss` |
-| med_list_codg | string | Y | 无 | 医疗目录编码 |
+| med_list_code | string | Y | 无 | 医疗目录编码 |
 | med_list_name | string | Y | 无 | 医疗目录名称 |
 | med_list_specs | string | Y | 无 | 医疗目录规格 |
 | medins_list_codg | string | Y | 无 | 医药机构目录编码 |
@@ -26,13 +27,13 @@
 | used_frequency_dscr | string | N | 无 | 使用频次描述 |
 | period_days | decimal | N | 无 | 周期天数 |
 | medc_way_dscr | string | N | 无 | 用药途径描述 |
-| billing_dept_codg | string | Y | 无 | 开单科室编码 |
+| billing_dept_code | string | Y | 无 | 开单科室编码 |
 | billing_dept_name | string | Y | 无 | 开单科室名称 |
-| billing_doctor_codg | string | Y | 无 | 开单医生编码 |
+| billing_doctor_code | string | Y | 无 | 开单医生编码 |
 | billing_doctor_name | string | Y | 无 | 开单医生姓名 |
-| acrod_dept_codg | string | N | 无 | 受单科室编码 |
+| acrod_dept_code | string | N | 无 | 受单科室编码 |
 | acrod_dept_name | string | N | 无 | 受单科室名称 |
-| acrod_doctor_codg | string | N | 无 | 受单医生编码 |
+| acrod_doctor_code | string | N | 无 | 受单医生编码 |
 | acrod_doctor_name | string | N | 无 | 受单医生姓名 |
 | hosp_appr_flag | int | N | 无 | 医院审批标志，1：已审批，2：转自费 |
 | tcmdrug_used_way | string | N | 无 | 中药使用方式 |
