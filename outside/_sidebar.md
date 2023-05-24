@@ -35,6 +35,7 @@
 		* [患者待缴费明细清单](outside/outpatient/unpaidfees_details.md)
 		* [根据处方号查询处方明细信息](outside/outpatient/recipe_info.md)
 		* [处方预结算](outside/outpatient/settlement_pre.md)
+		* [门诊缴费提交](outside/outpatient/charge_commit.md)
 	* [住院服务接口](outside/inhospital/README.md)
 		* [住院患者预交金充值](outside/inhospital/prepay)
 		* [查询患者预缴费记录](outside/inhospital/prepay_list)
@@ -51,3 +52,4 @@
 		* [统一退费查询接口](outside/other/refund_query.md)
 		* [HIS侧退费时的通知接口](outside/other/refund_sync.md)
 		* [查询用户电子发票列表](outside/other/invono_list.md)
+		* [事务补偿查询检查接口](outside/other/trade_check.md)

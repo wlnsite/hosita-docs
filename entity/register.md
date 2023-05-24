@@ -20,6 +20,7 @@
 | reg_level_name | string | N | 挂号级别名称 |
 | reg_state_code | string | N | 挂号状态编码 |
 | reg_state_name | string | N | 挂号状态名称 |
+| reg_qrtext | string | N | 签到/看诊时需要出示的二维码（文本值） |
 | dept_id | string | N | 挂号科室编号（唯一标识） |
 | dept_name | string | N | 挂号科室名称（院内简称） |
 | dept_address | string | N | 院内导航地址（楼栋楼层 ） |

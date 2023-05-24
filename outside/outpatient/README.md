@@ -15,3 +15,4 @@
 * [患者待缴费清单](outside/outpatient/unpaidfees.md)
 * [根据处方号查询处方明细信息](outside/outpatient/recipe_info.md)
 * [处方预结算](outside/outpatient/settlement_pre.md)
+* [门诊缴费提交](outside/outpatient/charge_commit.md)

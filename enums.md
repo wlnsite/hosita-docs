@@ -33,6 +33,14 @@
 | client | 自助终端     | siapp  | 医保APP      |
 | other  | 其他         |        |              |
 
+#### 业务类型 :id=business
+
+|  枚举值   |     说明     | 枚举值 |     说明     |
+| -------- | ------------ | ------ | ------------ |
+| register | 挂号         | charge | 门诊缴费       |
+| prepay | 住院费预缴     | parking | 停车缴费      |
+| online  | 线上服务       | other | 其它业务      |
+
 #### 支付方式 :id=payment
 
 | 枚举值 |     说明     | 枚举值 |     说明     |

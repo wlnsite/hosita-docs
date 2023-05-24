@@ -11,6 +11,8 @@
 		* [处方明细](entity/recipe.md)
 		* [费用明细](entity/feedetail.md)
 		* [诊断信息](entity/diagnose.md)
+		* [医保结算信息](entity/setlinfo.md)
+		* [医保结算类型明细](entity/setldetail.md)
 * [外部标准接口](outside/README.md)
 	* [医院信息接口](outside/hospital/README.md)
 	* [病人信息接口](outside/patient/README.md)
