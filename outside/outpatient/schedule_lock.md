@@ -8,8 +8,9 @@
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
     | -------- | -------- | -------- | ---- |
     | schedule_id | string | R | 锁号的排班计划ID |
-    | schedule_date | string | R | 计划就诊日期（格式：`yyyy-MM-dd`），留空为当天 |
-    | schedule_time | string | R | 计划就诊时间（格式：`HH:mm:ss`），留空为当天 |
+    | schedule_no | string | R | 锁号的排班明细序号 |
+    | schedule_date | string | O | 计划就诊日期（格式：`yyyy-MM-dd`），留空为当天 |
+    | schedule_time | string | O | 计划就诊时间（格式：`HH:mm:ss`），留空为当天 |
     | client_id | string | R | 用户Id |
     | patient_id | string | C | 挂号人就诊档案（卡）Id |
     | patient_name | string | O | 挂号人就诊档案（卡）姓名 |
@@ -21,7 +22,7 @@
 - **输出参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
     | -------- | -------- | -------- | ---- |
-    | code | string | R | 执行状态：1-成功，其它表示异常 |
+    | code | string | R | 执行状态：0-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
     | data | object | R | 输出数据：锁号结果 |
     | - result | bool | R | 是否成功，true或false |

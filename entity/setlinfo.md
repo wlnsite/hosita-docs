@@ -16,7 +16,7 @@
 | hifp_pay | decimal | N | 0.00 | 基本医疗保险统筹基金支出 |
 | pool_prop_selfpay | decimal | N | 0.00 | 基本医疗保险统筹基金支付比例 |
 | cvlserv_pay | decimal | N | 0.00 | 公务员医疗补助资金支出 |
-| hifes_pay | decimal | N | 0.00 | 实际支付起付线 |
+| hifes_pay | decimal | N | 0.00 | 企业补充医疗保险基金支出 |
 | hifmi_pay | decimal | N | 0.00 | 居民大病保险资金支出 |
 | hifob_pay | decimal | N | 0.00 | 企业补充医疗保险基金支出 |
 | maf_pay | decimal | N | 0.00 | 医疗救助基金支出 |
