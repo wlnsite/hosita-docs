@@ -8,7 +8,7 @@
     | -------- | -------- | -------- | ---- |
     | trade_no | string | R | 支付时的交易流水号 |
     | his_refund_id | string | R | 业务系统退费请求唯一编号 |
-    | his_refund_time | string | long | R | 业务系统退费时间（Unix时间戳） |
+    | his_refund_time | long | R | 业务系统退费时间（Unix时间戳） |
     | amount_si | int | C | 医保统筹退费金额，未退时为零（单位：分） |
     | amount_acc | int | C | 医保个账退费金额，未退时为零（单位：分） |
     | amount_cash | int | C | 现金支付退费金额，未退时为零（单位：分） |
