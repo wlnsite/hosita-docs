@@ -1,7 +1,7 @@
 # 发起退费接口
 
 - **接口说明：** 发起退费接口
-- **接口地址：** /api/refund_apply
+- **接口地址：** /api/refund_apply[调用说明](srvapi?id=start)
 - **请求方式：** POST
 - **请求参数：**
     | 参数名称 | 参数类型 | 出现要求 | 描述 |
@@ -18,7 +18,4 @@
     | -------- | -------- | -------- | ---- |
     | code | string | R | 执行状态：1-成功，其它表示异常 |
     | message | string | R | 消息：错误消息或成功提示 |
-    | data | array | R | 输出数据：发票记录列表（按时间排序） |
-    | - trade_no | string | R | 支付时的交易流水号 |
-    | - refund_trade_no | string | R | 退费时的交易流水号 |
-    | - refund_trade_time | long | R | 支付平台受理退费的时间（Unix时间戳） |
+    | data | string | R | 退费发起成功时返回退费流水号，后续可使用此流水号查询退费状态 |
