@@ -9,3 +9,4 @@
 * [事务补偿查询检查接口](outside/other/trade_check.md)
 * [微信模板消息推送透传接口](outside/other/push_weixin.md)
 * [支付宝模板消息推送透传接口](outside/other/push_alipay.md)
+* [微信公众号网页授权三方应用接口](outside/other/outauth_weixin.md)
